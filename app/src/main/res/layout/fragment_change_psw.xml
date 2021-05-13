@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".changePswFragment">
+
+    <View
+        android:id="@+id/loginbgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="100dp">
+
+                <TextView
+                    android:id="@+id/txtHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Change Password"
+                    android:textColor="@color/darkPurple"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bgtopcornerrouned"
+                android:layout_marginTop="30dp"
+                android:paddingTop="80dp"
+                android:paddingBottom="50dp"
+                android:gravity="center">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/textviewlbl0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Account Email"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp">
+
+                                <EditText
+                                    android:id="@+id/txtCurrentEmail"
+                                    android:layout_width="250dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/textviewbottomborder"
+                                    android:gravity="center"
+                                    android:inputType="textEmailAddress"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple"
+                                    android:textAllCaps="true"/>
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/textviewlbl1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Current Password"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp">
+
+                                <EditText
+                                    android:id="@+id/txtCurrentPsw"
+                                    android:layout_width="250dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/textviewbottomborder"
+                                    android:gravity="center"
+                                    android:inputType="textPassword"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple"
+                                    android:textAllCaps="true"/>
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/textviewname"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="New Password"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp">
+
+                                <EditText
+                                    android:id="@+id/txtNewPsw"
+                                    android:layout_width="250dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/textviewbottomborder"
+                                    android:gravity="center"
+                                    android:inputType="textPassword"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/textviewlbl2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Re-Enter New Password"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp">
+
+                                <EditText
+                                    android:id="@+id/txtReEnterPsw"
+                                    android:layout_width="250dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/textviewbottomborder"
+                                    android:gravity="center"
+                                    android:inputType="textPassword"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple"
+                                    />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="10dp">
+
+                        <Button
+                            android:id="@+id/btnPswUpdate"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/txtfieldroundcorners"
+                            android:textColor="@color/white"
+                            android:text="CHANGE PASSWORD"
+                            android:stateListAnimator="@null"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="10dp">
+
+                        <Button
+                            android:id="@+id/btnPswCancel"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/txtfieldroundcorners"
+                            android:textColor="@color/white"
+                            android:text="CANCEL"
+                            android:stateListAnimator="@null"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</FrameLayout>

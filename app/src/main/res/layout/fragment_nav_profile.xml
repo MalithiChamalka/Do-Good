@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navProfileFragment">
+
+    <View
+        android:id="@+id/loginbgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImagesView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/profile_image" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/darkPurple"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textColor="@color/darkPurple"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgtopcornerrouned"
+                android:layout_marginTop="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:gravity="center">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/textviewlbl1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Date of Birth"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/lblDobView"
+                                    android:layout_width="250dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/textviewbottomborder"
+                                    android:gravity="center"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/textviewlbl2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="NIC Number"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/lblNicView"
+                                    android:layout_width="250dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/textviewbottomborder"
+                                    android:gravity="center"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/textviewlbl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Phone Number"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/lblPhoneNumberView"
+                                    android:layout_width="250dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/textviewbottomborder"
+                                    android:gravity="center"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/textviewlbl4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Location"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/lblLocationView"
+                                    android:layout_width="250dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/textviewbottomborder"
+                                    android:gravity="center"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/textviewlbl5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Occupation"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/lblOccupationView"
+                                    android:layout_width="250dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/textviewbottomborder"
+                                    android:gravity="center"
+                                    android:textColorHint="@color/darkPurple"
+                                    android:textColor="@color/darkPurple" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="10dp">
+
+                        <Button
+                            android:id="@+id/btnToGoEditProfilePage"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/txtfieldroundcorners"
+                            android:textColor="@color/white"
+                            android:text="EDIT PROFILE"
+                            android:stateListAnimator="@null"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="10dp">
+
+                        <Button
+                            android:id="@+id/btnToGoEditChangePswPage"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/txtfieldroundcorners"
+                            android:textColor="@color/white"
+                            android:text="CHANGE PASSWORD"
+                            android:stateListAnimator="@null"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+</FrameLayout>
